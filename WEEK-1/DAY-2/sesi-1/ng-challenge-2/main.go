@@ -76,6 +76,10 @@ func sortNumbers(numbers []int) {
 			}
 	}
 }
+
+func perkalian(angka1, angka2 int) int {
+	return angka1 * angka2
+}
 func main() {
 	/*NG - CHALLANGE - 2 : Conditional 1*/
 // 	var getName string
@@ -180,5 +184,20 @@ for i := rows4; i > 0; i-- {
 	}
 	fmt.Println()
 }
+
+// angka1 := 5
+// angka2 := 2
+
+// fmt.Println(perkalian(angka1,angka2))
+// func perkalian(angka1, angka2 int) int {
+// 	return angka1 * angka2
+// }
+
+
+
+
 }
+
+
+
 

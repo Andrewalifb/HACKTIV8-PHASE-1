@@ -44,10 +44,22 @@ func fibonacci(n int) int {
 	return fibo[n]
 }
 
-func main() {
-/* NGC - 4 Function 2 */
-alayGen("Hello", "world", "zzz", "ayam", "xiapi", "landasan")
-/* NGC - 4 Function 3 */
-fmt.Println(fibonacci(6))
+func ganjil(num int) {
+// 1, 3, 5, 7, 9
+//   2  2  2  2
+data := 1
+for i := 1; i <= num; i++ {
+fmt.Println("Nilai:", i)
 
+fmt.Println(data)
+data += 2
+}
+}
+
+func main() {
+// /* NGC - 4 Function 2 */
+// alayGen("Hello", "world", "zzz", "ayam", "xiapi", "landasan")
+// /* NGC - 4 Function 3 */
+// fmt.Println(fibonacci(6))
+ganjil(5)
 }

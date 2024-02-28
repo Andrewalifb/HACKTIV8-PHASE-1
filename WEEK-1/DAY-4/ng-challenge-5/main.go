@@ -47,7 +47,7 @@ type Hero struct {
 
 func (h *Hero) CountDamage() int {
 	damage := rand.NewSource(time.Now().UnixNano())
-	h.CriticalDamage = rand.New(damage).Intn(20)
+	h.CriticalDamage = rand.New(damage).Intn(2)
 	total_damage := h.BaseAttack + h.Weapon.Attack + h.CriticalDamage
 	// fmt.Println("Total Damage :", total_damage)
 return total_damage
@@ -107,22 +107,22 @@ func main() {
 
 	/* NG Challenge 5 : Struct HERO 1 */
   Marvel := Hero {
-		Name:           "Iron Man",
-		BaseAttack:     5,
-		Defense:        30,
-		CriticalDamage: 0,
-		HealthPoint:    100,
-		Weapon:         Weapon{Attack: 10},
+		Name:           "Superman",
+		BaseAttack:     100,
+		Defense:        50,
+		CriticalDamage: 50,
+		HealthPoint:    150,
+		Weapon:         Weapon{Attack: 30},
 	}
 
 
 	DC := Hero {
 		Name:           "Batman",
-		BaseAttack:     5,
-		Defense:        25,
-		CriticalDamage: 0,
-		HealthPoint:    100,
-		Weapon:         Weapon{Attack: 5},
+		BaseAttack:     80,
+		Defense:        70,
+		CriticalDamage: 30,
+		HealthPoint:    180,
+		Weapon:         Weapon{Attack: 25},
 	}
 fmt.Println("Iron Man Damage : ", Marvel.CountDamage())
 fmt.Println("Batman Damage :",DC.CountDamage())
